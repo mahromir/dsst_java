@@ -40,8 +40,10 @@ public class DSST {
 
         TLEPropagator tle_prop = TLEPropagator.selectExtrapolator(myTle);
         SpacecraftState scState = tle_prop.propagate(extrapDate);
+        Orbit orbit = scState.getOrbit();
 
-        double positionTolerance = 1.0;
+        NumericalPropagator myNM = DSST.createNumProp(orbit, 100.0);
+        System.out.println(myNM);
 
     }
 
@@ -65,8 +67,9 @@ public class DSST {
         return new TLE(tle[0], tle[1]);
     }
 
-    private NumericalPropagator createNumProp(final Orbit orbit, final double mass) {
+    private static NumericalPropagator createNumProp(final Orbit orbit, final double mass) {
         final double[][] tol = NumericalPropagator.tolerances(1.0, orbit, orbit.getType());
+        System.out.println(tol.length);
         final double minStep = 1.e-3;
         final double maxStep = 1.e+3;
         final AdaptiveStepsizeIntegrator integrator = new DormandPrince853Integrator(minStep, maxStep, tol[0], tol[1]);
