@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="orekit" type="repository">
+    <properties maven-id="org.orekit:orekit:11.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/orekit/orekit/11.2/orekit-11.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-core/2.1/hipparchus-core-2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-geometry/2.1/hipparchus-geometry-2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-ode/2.1/hipparchus-ode-2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-fitting/2.1/hipparchus-fitting-2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-optim/2.1/hipparchus-optim-2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-filtering/2.1/hipparchus-filtering-2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hipparchus/hipparchus-stat/2.1/hipparchus-stat-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
